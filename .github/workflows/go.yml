@@ -29,8 +29,8 @@ jobs:
     - name: Test
       run: go test -v ./...
 
-    - name: Deploy
-      if: github.ref == 'refs/heads/main' && success()  # Only deploy on successful builds on the main branch
-      run: echo "Deploying your application..."  # Replace this with your actual deployment script
+    # - name: Deploy
+    #   if: github.ref == 'refs/heads/main' && success()  # Only deploy on successful builds on the main branch
+    #   run: echo "Deploying your application..."  # Replace this with your actual deployment script
 
 
